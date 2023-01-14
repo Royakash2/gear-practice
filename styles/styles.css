@@ -4,7 +4,7 @@
 /*  Comon styles or utilites */
 body {
     font-family: 'Poppins', sans-serif;
-    
+
 }
 
 /* navigation-bar styles */
@@ -12,6 +12,8 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
+    max-width: 100%;
 }
 
 .nav-manu ul {
@@ -38,15 +40,17 @@ body {
     display: flex;
     align-items: center;
     gap: 130px;
-    margin: 0 120px;
+    padding: 0 120px;
 }
 
-.banner-title, title{
+.banner-title,
+title {
     font-weight: 700;
     font-size: 30px;
 }
 
-.banner-discription, .discription {
+.banner-discription,
+.discription {
     font-weight: 300;
     font-size: 14px;
 }
@@ -90,7 +94,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 30px;
     justify-items: center;
-    margin: 0 90px ;
+    margin: 0 90px;
 }
 
 .collection {
@@ -107,22 +111,45 @@ body {
     border-radius: 5px;
     margin: 0 auto;
 }
-.fa-star{
+
+.fa-star {
     color: coral;
 }
-.empty{
+
+.empty {
     color: #AAAAAA;
 }
+
 /* feature styles */
-.featured-container{
+.featured-container {
     display: flex;
     align-items: center;
-    margin: 100px 120px;
+    padding: 100px 120px;
     gap: 96px;
 }
+
 /* fotter styles */
-footer{
-    background-color:  #0A0826;
+footer {
+    background-color: #0A0826;
     color: #AAAAAA;
     text-align: center;
+    width: 100%;
+}
+
+/* smaller divice styles*/
+@media screen and (max-width: 576px) {
+
+    .banner-container,
+    .featured-container {
+        flex-direction: column-reverse;
+    }
+
+    .logo {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .collections {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
