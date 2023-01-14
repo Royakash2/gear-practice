@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Red+Hat+Display:wght@500;700;900&family=Work+Sans:wght@400;700&display=swap');
 
 /*  Comon styles or utilites */
+*{
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: 'Poppins', sans-serif;
 
@@ -145,8 +149,7 @@ footer {
     }
 
     .logo {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        flex-direction: column;
     }
 
     .collections {
